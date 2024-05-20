@@ -4,9 +4,12 @@
     "es2021": true
   },
   "extends": [
+    "next",
+    "plugin:react/recommended",
+    "plugin:react/recommended",
+    "next/core-web-vitals",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended"
+    "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -18,7 +21,10 @@
     "react"
   ],
   "rules": {
-    "semi": "warn",
+    "semi": [
+      "warn",
+      "always"
+    ],
     "quotes": [
       "warn",
       "single"
@@ -33,6 +39,11 @@
     "no-empty": "warn",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
-    "@typescript-eslint/no-unused-vars": "warn"
+    "@typescript-eslint/no-unused-vars": "warn",
+    "no-unused-vars": "warn",
+    "react/no-unescaped-entities": "off",
+    "no-undef": "off",
+    "no-empty-pattern": "off",
+    "react-hooks/exhaustive-deps": "off"
   }
 }

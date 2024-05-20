@@ -1,4 +1,4 @@
-import { Container, Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 
 import { CardPotfolio, ICardPotfolioProps } from '@/_components';
 
@@ -41,26 +41,47 @@ const projects: ICardPotfolioProps[] = [
       'https://github.com/LovelaceLines/lovelacelines/blob/development/docs/images/Captura%20de%20tela%202024-03-11%20201957.png?raw=true',
     ],
     startDate: 'Fev 2024',
-    endDate: 'Presente'
+    endDate: 'Mar 2024'
   },
+  {
+    title: 'MiniHub',
+    buttons: [
+      { name: '.Net', href: 'https://dotnet.microsoft.com/pt-br/' },
+      { name: 'Next', href: 'https://nextjs.org/' },
+      { name: 'MUI', href: 'https://mui.com/' },
+    ],
+    description: 'O MiniHub é um sistema de gerenciamento de arquivos para empresas e projetos. Com ele, é possível criar, editar, compartilhar e excluir arquivos, além de gerenciar usuários, permissões e flags. Tudo isso na rede interna da sua empresa ou projeto.',
+    href: 'https://github.com/usrmaia/MiniHub',
+    imagesPath: [
+      'https://github.com/usrmaia/MiniHub/blob/main/docs/screenshots/UI%2001.png?raw=true',
+      'https://github.com/usrmaia/MiniHub/blob/main/docs/screenshots/UI%2004.png?raw=true',
+      'https://github.com/usrmaia/MiniHub/blob/main/docs/screenshots/UI%2006.png?raw=true',
+      'https://github.com/usrmaia/MiniHub/blob/main/docs/screenshots/UI%2007.png?raw=true',
+      'https://github.com/usrmaia/MiniHub/blob/main/docs/screenshots/API%20Swagger%20-%2001.png?raw=true',
+    ],
+    startDate: 'Mar 2024',
+    endDate: 'Mai 2024'
+  }
 ];
 
 export const Portfolio = () => {
   return (
-    <>
-      <Typography variant='h4' align='center' gutterBottom>
-        Portfolio
+    <Box id='portfolio'>
+      <Typography variant='h3' fontWeight='900' align='center' gutterBottom>
+        Portfólio
       </Typography>
+      <Typography variant='subtitle1' align='center' gutterBottom>
+        Aqui você encontra uma lista dos meus projetos mais recentes. Clique em um projeto para saber mais.
+      </Typography>
+      <br />
 
-      <Container>
-        <Grid container spacing={2} display='flex' alignItems='stretch'>
-          {projects.map((project, index) => (
-            <Grid item xs={12} sm={6} xl={4} key={index} alignItems='stretch'>
-              <CardPotfolio key={index} {...project} />
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
-    </>
+      <Grid container spacing={2} display='flex' alignItems='stretch'>
+        {projects.map((project, index) => (
+          <Grid item xs={12} sm={6} xl={4} key={index} alignItems='stretch'>
+            <CardPotfolio key={index} {...project} />
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
   );
 };

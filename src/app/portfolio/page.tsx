@@ -2,7 +2,7 @@ import { Container } from '@mui/material';
 
 import { About } from './about';
 import { Blog } from './blog';
-import { Footer } from './footer';
+import { Contact } from './contact';
 import { Technologies } from './technologies';
 import { Portfolio } from './portfolio';
 import { Welcome } from './welcome';
@@ -11,13 +11,20 @@ import { WorkProcess } from './work-process';
 export default function Home() {
   return (
     <Container>
+      <br />
       <Welcome />
+      <br />
       <Technologies />
+      <br />
       <Portfolio />
+      <br />
       <WorkProcess />
+      <br />
       <Blog />
+      <br />
       <About />
-      <Footer />
+      <Contact />
+      <br />
     </Container>
   );
 }
