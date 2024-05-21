@@ -8,7 +8,7 @@ import { colors } from '@/_theme';
 
 const Logo = (): JSX.Element => (
   <Link href='/' style={{ display: 'flex', alignItems: 'center' }}>
-    <Image src='landpage/srma.ia-logo-v1.svg' alt='srma.ia Logo' width={100} height={50} />
+    <Image src='logo/v1.svg' alt='srma.ia Logo' width={100} height={50} />
   </Link>
 );
 
@@ -26,7 +26,7 @@ const NavLinksPortifolio: NavLinkProps[] = [
 
 const NavLinksBlog: NavLinkProps[] = [
   { href: '/blog', label: 'Blog' },
-  { href: '/search', label: 'Buscar' },
+  { href: '/blog/search', label: 'Buscar' },
   { href: '/portfolio', label: 'Portfólio' },
   { href: '/portfolio#sobre', label: 'Sobre' },
 ];

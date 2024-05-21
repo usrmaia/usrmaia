@@ -27,7 +27,7 @@ const Buttons = (): JSX.Element => (
 );
 
 const backgroundStyle: SxProps<Theme> = {
-  backgroundImage: 'url(/landpage/welcome-background-1.jpg)',
+  backgroundImage: 'url(/landpage/profile-1.jpg)',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center',

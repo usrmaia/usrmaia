@@ -6,8 +6,7 @@ export const openGraph: OpenGraph = {
   type: 'website',
   locale: 'pt_BR',
   title: 'SRMA.IA',
-  // TODO: Add a description
-  description: 'Conheça a SRMA.IA e descubra como podemos lhe ajudar a alcançar seus objetivos!',
+  description: 'Este é o meu portfólio, onde você pode encontrar informações sobre mim e meus projetos. Se você gostou do que viu, entre em contato comigo para discutirmos como posso ajudar você a alcançar seus objetivos.',
   images: [
     {
       url: '/metadata/og-image.jpg',

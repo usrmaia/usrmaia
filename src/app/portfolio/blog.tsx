@@ -9,7 +9,7 @@ export const Blog = () => {
       <br />
       <Box mx={{ sm: 2, md: 4, lg: 8 }}>
         <Link href='/blog' target='_blank'>
-          <Image src='/blog-link-design.svg' alt='Blog link design' width={895.33} height={589.09} style={{ width: '-webkit-fill-available', height: 'auto' }} />
+          <Image src='/landpage/blog-link-design.svg' alt='Blog link design' width={895.33} height={589.09} style={{ width: '-webkit-fill-available', height: 'auto' }} />
         </Link>
       </Box>
     </Box>

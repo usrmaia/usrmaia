@@ -1,7 +1,7 @@
 import { Box, Grid, SxProps, Theme, Typography } from '@mui/material';
 
 const backgroundStyle: SxProps<Theme> = {
-  backgroundImage: 'url(/landpage/welcome-background-2.jpg)',
+  backgroundImage: 'url(/landpage/profile-2.jpg)',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center',

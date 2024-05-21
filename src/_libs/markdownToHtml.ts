@@ -13,8 +13,8 @@ export async function markdownToHtml(markdown: string) {
   return htmlResult.toString();
 }
 
-const authorsDirectory = join(process.cwd(), 'public/authors');
-const postsDirectory = join(process.cwd(), 'public/posts');
+const authorsDirectory = join(process.cwd(), 'public/blog/authors');
+const postsDirectory = join(process.cwd(), 'public/blog/posts');
 
 export async function markdownToHtmlBySlug(slug: string, type: 'author' | 'post') {
   const directory = type === 'author' ? authorsDirectory : postsDirectory;

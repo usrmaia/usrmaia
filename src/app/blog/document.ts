@@ -10,10 +10,9 @@ export const metadata: Metadata = {
     default: 'Blog',
     template: 'SRMA.IA - %s',
   },
-  // TODO: Add a description
-  description: '',
-  abstract: '',
-  category: '',
+  description: 'Este é o meu blog, onde você pode encontrar artigos sobre desenvolvimento de software, tecnologia e outros assuntos relacionados.',
+  abstract: 'Este é o meu blog, onde você pode encontrar artigos sobre desenvolvimento de software, tecnologia e outros assuntos relacionados.',
+  category: 'desenvolvimento de software',
   openGraph: {
     ...openGraph,
     description: '',

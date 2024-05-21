@@ -20,7 +20,6 @@ export const AuthorData = ({ author }: { author: Author }) => {
       <Link href={author.twitter ?? ''} rel='noopener noreferrer' target='_blank' style={{ color: 'inherit' }}>
         <X fontSize='medium' />
       </Link>
-      {/* TODO: add a mailto link */}
       <Link href={`mailto:${author.email}`} rel='noopener noreferrer' target='_blank' style={{ color: 'inherit' }}>
         <Mail fontSize='medium' />
       </Link>
