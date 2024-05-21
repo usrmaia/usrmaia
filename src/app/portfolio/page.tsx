@@ -1,5 +1,3 @@
-import { Container } from '@mui/material';
-
 import { About } from './about';
 import { Blog } from './blog';
 import { Contact } from './contact';
@@ -10,7 +8,7 @@ import { WorkProcess } from './work-process';
 
 export default function Home() {
   return (
-    <Container>
+    <>
       <br />
       <Welcome />
       <br />
@@ -25,6 +23,6 @@ export default function Home() {
       <About />
       <Contact />
       <br />
-    </Container>
+    </>
   );
 }

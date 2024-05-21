@@ -12,28 +12,34 @@ const Logo = (): JSX.Element => (
   </Link>
 );
 
-const Navigation = (): JSX.Element => (
+interface NavLinkProps {
+  href: string;
+  label: string;
+}
+
+const NavLinksPortifolio: NavLinkProps[] = [
+  { href: '#tecnologias', label: 'Tecnologias' },
+  { href: '#portfolio', label: 'Portfólio' },
+  { href: '#blog', label: 'Blog' },
+  { href: '#sobre', label: 'Sobre' },
+];
+
+const NavLinksBlog: NavLinkProps[] = [
+  { href: '/blog', label: 'Blog' },
+  { href: '/search', label: 'Buscar' },
+  { href: '/portfolio', label: 'Portfólio' },
+  { href: '/portfolio#sobre', label: 'Sobre' },
+];
+
+const Navigation = ({ navLinks }: { navLinks: NavLinkProps[] }): JSX.Element => (
   <>
-    <Link href='#tecnologias' passHref style={{ textDecoration: 'none', color: 'inherit' }}>
-      <Typography variant='button'>
-        Tecnologias
-      </Typography>
-    </Link >
-    <Link href='#portfolio' passHref style={{ textDecoration: 'none', color: 'inherit' }}>
-      <Typography variant='button'>
-        Portfólio
-      </Typography>
-    </Link >
-    <Link href='#blog' passHref style={{ textDecoration: 'none', color: 'inherit' }}>
-      <Typography variant='button'>
-        Blog
-      </Typography>
-    </Link >
-    <Link href='#sobre' passHref style={{ textDecoration: 'none', color: 'inherit' }}>
-      <Typography variant='button'>
-        Sobre
-      </Typography>
-    </Link>
+    {navLinks.map(navLinks => (
+      <Link key={navLinks.label} href={navLinks.href} passHref style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Typography variant='button'>
+          {navLinks.label}
+        </Typography>
+      </Link>
+    ))}
   </>
 );
 
@@ -59,7 +65,7 @@ const SocialMedia = (): JSX.Element => (
   </>
 );
 
-export const AppBar = () => {
+export const AppBar = ({ mode }: { mode: 'portfolio' | 'blog' }): JSX.Element => {
   return (
     <AppBarMUI position='sticky' color='transparent' elevation={0} sx={{ bgcolor: `${colors.primary}` }}>
       <Toolbar>
@@ -69,7 +75,7 @@ export const AppBar = () => {
               <Logo />
             </Grid>
             <Grid item xs={0} sm={0} md={4} lg={4} display={{ xs: 'none', md: 'flex' }} justifyContent='center' alignItems='center' gap={4}>
-              <Navigation />
+              <Navigation navLinks={mode === 'portfolio' ? NavLinksPortifolio : NavLinksBlog} />
             </Grid>
             <Grid item xs={7} sm={8} md={4} lg={4} display='flex' justifyContent='flex-end' alignContent='center'>
               <SocialMedia />

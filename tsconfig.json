@@ -34,8 +34,17 @@
       "@/hooks": [
         "./src/_hooks"
       ],
+      "@/shared": [
+        "./src/_shared"
+      ],
+      "@/styles": [
+        "./src/_styles"
+      ],
       "@/theme": [
         "./src/_theme"
+      ],
+      "@/types": [
+        "./src/_types"
       ],
     }
   },
