@@ -45,8 +45,6 @@ const Navigation = ({ navLinks }: { navLinks: NavLinkProps[] }): JSX.Element => 
 
 const SocialMedia = (): JSX.Element => (
   <>
-    <IconButton color='inherit' sx={{ display: { xs: 'none', sm: 'flex' } }}>
-    </IconButton>
     <IconButton color='inherit' href={env.GITHUB_PROFILE} target='_blank'>
       <GitHub />
     </IconButton>

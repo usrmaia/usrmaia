@@ -15,7 +15,7 @@ export const About = () => {
       <Grid item xs={12} sm={4} md={6}>
         <Box sx={backgroundStyle} />
       </Grid>
-      <Grid item xs={12} sm={8} md={6} display='flex' flexDirection='column' justifyContent='center' height='100vh'>
+      <Grid item xs={12} sm={8} md={6} display='flex' flexDirection='column' justifyContent='center' height='80vh'>
         <Typography variant='h4' fontWeight='900' gutterBottom>
           Um bit sobre mim
         </Typography>
@@ -23,7 +23,7 @@ export const About = () => {
           Olá! Meu nome é George Maia e sou um desenvolvedor web full-stack. Sou apaixonado por .Net e Next e estou sempre procurando maneiras de expandir meu conhecimento e melhorar meu código e processos de desenvolvimento.
         </Typography>
         <Typography variant='subtitle1' gutterBottom>
-          Além das tecnologias sitadas, também tenho experiência com React, Node, Flask e Delphi, Git e Docker.
+          Além das tecnologias sitadas, também tenho experiência com React, Node, Flask e Delphi; Git e Docker; SQL Server/Lite e Milvus.
         </Typography>
         <Typography variant='subtitle1' gutterBottom>
           Adoro conteúdos como metodologias ágeis, arquitetura de software e testes automatizados, novas tecnologias e técnicas de desenvolvimento.

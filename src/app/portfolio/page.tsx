@@ -21,6 +21,7 @@ export default function Home() {
       <Blog />
       <br />
       <About />
+      <br />
       <Contact />
       <br />
     </>

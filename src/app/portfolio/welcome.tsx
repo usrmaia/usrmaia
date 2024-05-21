@@ -17,10 +17,10 @@ const Title = (): JSX.Element => (
 
 const Buttons = (): JSX.Element => (
   <Box display='flex' gap={2}>
-    <Button variant='contained' color='primary' component={Link} href='/contato'>
+    <Button variant='contained' color='primary' component={Link} href='#contato'>
       Sobre mim
     </Button>
-    <Button variant='outlined' color='primary' component={Link} href='/portfolio'>
+    <Button variant='outlined' color='primary' component={Link} href='#portfolio'>
       Projetos
     </Button>
   </Box>
