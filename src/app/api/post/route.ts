@@ -4,7 +4,7 @@ import { Post } from '@prisma/client';
 
 import { searchPosts } from '@/_libs';
 
-// export const dynamic = 'force-dynamic';
+export const dynamic = 'force-dynamic';
 
 // api/post?query=[query]
 export async function GET(req: NextRequest) {
