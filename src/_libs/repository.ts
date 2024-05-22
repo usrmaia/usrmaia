@@ -8,6 +8,9 @@ export const getPostBySlug = async (slug: string): Promise<Post & { authors: Aut
 export const getAllPosts = async (page: number = 1, limit: number = Number.MAX_SAFE_INTEGER): Promise<Post[]> =>
   await prisma.post.findMany({ take: limit, skip: (page - 1) * limit, orderBy: { dateCreated: 'desc' } }) as Post[];
 
+export const getAllPostsSlugs = async (): Promise<string[]> =>
+  await prisma.post.findMany({ select: { slug: true } }).then(posts => posts.map(post => post.slug));
+
 export const getCountPosts = async (): Promise<number> =>
   await prisma.post.count();
 
