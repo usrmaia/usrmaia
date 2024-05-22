@@ -7,8 +7,13 @@ import { notFound } from 'next/navigation';
 import { PostData, PostContent, PostsRecommended, ContentSummary, AuthorLinkCard, PrevNextPage, RouterBack } from '@/_components';
 import { metadata as baseMetadata } from './document';
 import env from '@/env';
-import { getPostBySlug, getRecommendedPosts, markdownToHtmlBySlug } from '@/_libs';
+import { getAllPostsSlugs, getPostBySlug, getRecommendedPosts, markdownToHtmlBySlug } from '@/_libs';
 import { Params } from '@/_types';
+
+export async function generateStaticParams() {
+  const slugs = await getAllPostsSlugs();
+  return slugs.map(slug => ({ slug }));
+}
 
 export async function generateMetadata({ params: { slug } }: Params): Promise<Metadata> {
   const post = await fetchPost(slug);
