@@ -1,11 +1,16 @@
 import type { Metadata } from 'next';
 
 import { PostFlatData, TagData } from '@/_components';
-import { getTagBySlug } from '@/_libs';
+import { getAllTagsSlugs, getTagBySlug } from '@/_libs';
 
 export const metadata: Metadata = {
   title: 'Tag',
 };
+
+export async function generateStaticParams() {
+  const slugs = await getAllTagsSlugs();
+  return slugs.map(slug => ({ slug }));
+}
 
 export default async function Page({ params: { slug } }: { params: { slug: string } }) {
   const tag = await getTagBySlug(slug);
