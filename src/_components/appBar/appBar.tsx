@@ -20,7 +20,7 @@ interface NavLinkProps {
 const NavLinksPortifolio: NavLinkProps[] = [
   { href: '#tecnologias', label: 'Tecnologias' },
   { href: '#portfolio', label: 'Portfólio' },
-  { href: '#blog', label: 'Blog' },
+  { href: '/blog', label: 'Blog' },
   { href: '#sobre', label: 'Sobre' },
 ];
 
