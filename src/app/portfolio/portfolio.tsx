@@ -61,6 +61,32 @@ const projects: ICardPotfolioProps[] = [
     ],
     startDate: 'Mar 2024',
     endDate: 'Mai 2024'
+  },
+  {
+    title: 'PontoSavi',
+    buttons: [
+      { name: '.Net', href: 'https://dotnet.microsoft.com/pt-br/' },
+      { name: 'Next', href: 'https://nextjs.org/' },
+      { name: 'MUI', href: 'https://mui.com/' },
+      { name: 'MUI', href: 'https://mui.com/' },
+      { name: 'Redux', href: 'https://redux-toolkit.js.org/' },
+    ],
+    description: 'Um aplicativo desenvolvido para gerenciar e controlar o registro de ponto dos funcionários. Este sistema foi projetado para atender às necessidades de empresas de pequeno portes, oferecendo uma solução segura e eficiente para o controle de jornadas de trabalho.',
+    href: 'https://github.com/LovelaceLines/PontoSavi',
+    imagesPath: [
+      'https://github.com/LovelaceLines/PontoSavi/blob/main/docs/screenshots/UI%2003.png?raw=true',
+      'https://github.com/LovelaceLines/PontoSavi/blob/main/docs/screenshots/UI%2011.png?raw=true',
+      'https://github.com/LovelaceLines/PontoSavi/blob/main/docs/screenshots/UI%2013.png?raw=true',
+      'https://github.com/LovelaceLines/PontoSavi/blob/main/docs/screenshots/UI%2014.png?raw=true',
+      'https://github.com/LovelaceLines/PontoSavi/blob/main/docs/screenshots/UI%2020.png?raw=true',
+      'https://github.com/LovelaceLines/PontoSavi/blob/main/docs/screenshots/UI%2021.png?raw=true',
+      'https://github.com/LovelaceLines/PontoSavi/blob/main/docs/screenshots/API%2001.png?raw=true',
+      'https://github.com/LovelaceLines/PontoSavi/blob/main/docs/screenshots/API%2002.png?raw=true',
+      'https://github.com/LovelaceLines/PontoSavi/blob/main/docs/screenshots/API%2003.png?raw=true',
+      'https://github.com/LovelaceLines/PontoSavi/blob/main/docs/screenshots/API%2004.png?raw=true',
+    ],
+    startDate: 'Mai 2024',
+    endDate: 'Jun 2024'
   }
 ];
 
