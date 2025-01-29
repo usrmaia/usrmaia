@@ -32,14 +32,14 @@ Bibliotecas comumente utilizadas por mim:
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 ![Next.js](./docs/icons/nextjs.png) | ![React](./docs/icons/react.png) | ![Redux](./docs/icons/redux.png) | ![Material React Table](./docs/icons/material-react-table.png) | ![react-hook-form](./docs/icons/react-hook-form.png) | ![Axios](./docs/icons/axios.png) | ![ReactRouter](./docs/icons/react-router.png) | ![Prisma](./docs/icons/prisma.png) | ![MUI](./docs/icons/mui.png) | ![Jest](./docs/icons/jestjs.png) | ![Babel](./docs/icons/babel.png)| ![ESLint](./docs/icons/eslint.png) | ![Zod](./docs/icons/zod.png) | ![JWT Decoder](./docs/icons/jwt.png) | ![React Icons](./docs/icons/react-icons.png) | ![Unform](./docs/icons/unform.png) | ![Fuse.js](./docs/icons/fusejs.png) 
 
-### Flask
-O Flask é um micro framework de desenvolvimento web em Python, projetado para ser leve e modular, permitindo que os desenvolvedores escolham as bibliotecas e ferramentas que desejam usar. É fácil de configurar e usar, o que o torna uma escolha popular para criar protótipos e aplicativos web de pequeno a médio porte. O Flask proporciona uma base sólida com extensões que permitem adicionar funcionalidades conforme necessário.
+### Django
+O Django é um framework de desenvolvimento web em Python, projetado para ser robusto e completo, oferecendo uma estrutura pronta para a criação de aplicações escaláveis e seguras. Ele segue o padrão Model-View-Template (MVT) e inclui diversas funcionalidades integradas, como autenticação, ORM, sistema de administração e proteção contra ataques comuns. O Django enfatiza a rapidez no desenvolvimento e boas práticas, tornando-se uma escolha ideal para projetos de médio a grande porte que exigem alta produtividade e manutenção simplificada.
 
 Bibliotecas comumente utilizadas por mim:
 
-| [Flask](https://flask.palletsprojects.com/en/3.0.x/) | [Milvus](https://milvus.io/)
-|:--:|:--:|
-![Flask](./docs/icons/flask.png) | ![Milvus](./docs/icons/milvus.png)
+| [Django](https://www.djangoproject.com/) | [REST framework](https://www.django-rest-framework.org/) | [LlamaIndex](https://docs.llamaindex.ai/en/stable/)
+|:--:|:--:|:--:|
+![Django](./docs/icons/django.png) | ![REST framework](./docs/icons/restframework.png) | ![LlamaIndex](./docs/icons/llamaindex.png)
 
 ## Últimos projetos desenvolvidos
 
@@ -52,6 +52,18 @@ O sistema LNSF foi desenvolvido com um propósito fundamental: aprimorar a efici
 ![LNSF](https://github.com/LovelaceLines/LNSF/blob/development/docs/screenshots/UI%20-%20Page.png?raw=true)
 ![LNSF](https://github.com/LovelaceLines/LNSF/blob/development/docs/screenshots/UI%20-%20Table.png?raw=true)
 ![LNSF](https://github.com/LovelaceLines/LNSF/blob/development/docs/screenshots/UI%20-%20Form.png?raw=true)
+
+### [ChainMetrics](https://github.com/usrmaia/ChainMetrics)
+
+O projeto trabalha com uma API dotnet/aspnet que consome um banco de dados SQLite pré-populado com dados de vendas. A API é consumida por um front-end em Streamlit/Python com pandas e plotly para visualização dos dados.
+
+![ChainMetrics](https://github.com/usrmaia/ChainMetrics/blob/main/docs/screenshots/Captura%20de%20tela%202025-01-29%20062042.png?raw=true)
+![ChainMetrics](https://github.com/usrmaia/ChainMetrics/blob/main/docs/screenshots/Captura%20de%20tela%202025-01-29%20062047.png?raw=true)
+![ChainMetrics](https://github.com/usrmaia/ChainMetrics/blob/main/docs/screenshots/Captura%20de%20tela%202025-01-29%20062101.png?raw=true)
+![ChainMetrics](https://github.com/usrmaia/ChainMetrics/blob/main/docs/screenshots/Captura%20de%20tela%202025-01-29%20062139.png?raw=true)
+![ChainMetrics](https://github.com/usrmaia/ChainMetrics/blob/main/docs/screenshots/Captura%20de%20tela%202025-01-29%20062149.png?raw=true)
+![ChainMetrics](https://github.com/usrmaia/ChainMetrics/blob/main/docs/screenshots/Captura%20de%20tela%202025-01-29%20062214.png?raw=true)
+
 
 ### [Lovelace Lines - Landpage + Blog](https://github.com/LovelaceLines/lovelacelines/tree/development)
 
