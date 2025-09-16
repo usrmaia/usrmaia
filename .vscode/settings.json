@@ -10,5 +10,5 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true
   },
-  "conventionalCommits.scopes": ["nextjs", "gitignore", "prettier"]
+  "conventionalCommits.scopes": ["nextjs", "gitignore", "prettier", "eslint"]
 }
