@@ -1,5 +1,6 @@
 export * from "./call-to-action";
 export * from "./description-section";
+export * from "./footer";
 export * from "./header";
 export * from "./hero-section";
 export * from "./logo";
