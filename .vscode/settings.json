@@ -17,6 +17,7 @@
     "eslint",
     "tailwindcss",
     "shadcnui",
-    "landpage"
+    "landpage",
+    "proj"
   ]
 }
