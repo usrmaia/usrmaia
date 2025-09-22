@@ -1,3 +1,4 @@
+export * from "./call-to-action";
 export * from "./description-section";
 export * from "./header";
 export * from "./hero-section";
