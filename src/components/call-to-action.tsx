@@ -4,7 +4,7 @@ import { sendWhatsAppMessage } from "@/lib/actions";
 
 export const CallToAction = () => {
   return (
-    <section className="py-16 md:py-32">
+    <section id="contato" className="py-16 md:py-32">
       <div className="mx-auto max-w-5xl px-6">
         <div className="text-center">
           <h2 className="text-4xl font-semibold text-balance lg:text-5xl">

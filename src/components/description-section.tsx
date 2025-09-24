@@ -5,7 +5,7 @@ import { InfiniteSlider } from "@/components/ui/infinite-slider";
 
 export const DescriptionSection = () => {
   return (
-    <section className="py-16 md:py-32">
+    <section id="sobre-mim" className="py-16 md:py-32">
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
         <div className="mx-auto max-w-xl space-y-6 text-center md:space-y-12">
           <h2 className="text-4xl font-medium text-balance lg:text-5xl">

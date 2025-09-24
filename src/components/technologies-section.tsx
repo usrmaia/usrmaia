@@ -40,7 +40,7 @@ import { Badge, Card } from "@/components/ui";
 
 export const TechnologiesSection = () => {
   return (
-    <section>
+    <section id="tecnologias">
       <div className="py-32">
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center">
