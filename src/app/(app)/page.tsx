@@ -4,7 +4,7 @@ import {
   FooterSection,
   HeroSection,
   Specialty,
-  StatsSection,
+  GitHubStatsSection,
   TechnologiesSection,
 } from "@/components";
 
@@ -15,7 +15,7 @@ export default function Home() {
       <Specialty />
       <TechnologiesSection />
       <DescriptionSection />
-      <StatsSection />
+      <GitHubStatsSection />
       <CallToAction />
       <FooterSection />
     </>
