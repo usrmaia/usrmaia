@@ -3,14 +3,8 @@ import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { menuItems } from "./consts";
 import React from "react";
-
-const menuItems = [
-  { name: "Features", href: "#link" },
-  { name: "Solution", href: "#link" },
-  { name: "Pricing", href: "#link" },
-  { name: "About", href: "#link" },
-];
 
 export const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
