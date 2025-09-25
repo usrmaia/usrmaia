@@ -1,10 +1,11 @@
 "use client";
-import Link from "next/link";
-import { Logo } from "@/components/logo";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { menuItems } from "./consts";
+import Link from "next/link";
 import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
+import { Logo } from "@/components/logo";
+import { menuItems } from "./consts";
 
 export const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
@@ -65,17 +66,25 @@ export const HeroHeader = () => {
                   ))}
                 </ul>
               </div>
-              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <Button asChild variant="outline" size="sm">
-                  <Link href="#">
-                    <span>Login</span>
-                  </Link>
-                </Button>
-                <Button asChild size="sm">
-                  <Link href="#">
-                    <span>Sign Up</span>
-                  </Link>
-                </Button>
+              <div className="flex w-full flex-row justify-center gap-4 space-y-3 sm:flex-row sm:justify-center sm:gap-3 sm:space-y-0 md:w-fit">
+                <Link
+                  href="https://github.com/usrmaia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  className="text-muted-foreground hover:text-primary block"
+                >
+                  <FaGithub className="size-6" />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/srmaia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="text-muted-foreground hover:text-primary block"
+                >
+                  <FaLinkedin className="size-6" />
+                </Link>
               </div>
             </div>
           </div>
