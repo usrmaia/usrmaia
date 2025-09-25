@@ -162,7 +162,7 @@ export const HeroSection = () => {
                     variant="ghost"
                     className="h-10.5 rounded-xl px-5"
                   >
-                    <Link href="#projetos">
+                    <Link href="#portfolio">
                       <span className="text-nowrap">Ver meus projetos</span>
                     </Link>
                   </Button>
@@ -171,7 +171,7 @@ export const HeroSection = () => {
             </div>
           </div>
         </section>
-        <section className="bg-background mt-12 pb-16 md:pb-32">
+        <section className="bg-background mt-12 pb-16 md:pb-32 lg:mt-24">
           <AnimatedGroup
             variants={{
               container: {
@@ -198,7 +198,7 @@ export const HeroSection = () => {
                       rel="noreferrer"
                     >
                       <Image
-                        className="mx-auto h-4 w-fit"
+                        className="mx-auto h-6 w-fit"
                         src="/logo/konstroi.png"
                         alt="Column Logo"
                         height="2000"
@@ -211,7 +211,7 @@ export const HeroSection = () => {
                       rel="noreferrer"
                     >
                       <Image
-                        className="mx-auto h-4 w-fit"
+                        className="mx-auto h-6 w-fit"
                         src="/logo/ong-gabriel.svg"
                         alt="Column Logo"
                         height="2000"
@@ -224,7 +224,7 @@ export const HeroSection = () => {
                       rel="noreferrer"
                     >
                       <Image
-                        className="mx-auto h-4 w-fit"
+                        className="mx-auto h-6 w-fit"
                         src="/logo/playdevs.png"
                         alt="Column Logo"
                         height="2000"
@@ -237,7 +237,7 @@ export const HeroSection = () => {
                       rel="noreferrer"
                     >
                       <Image
-                        className="mx-auto h-4 w-fit"
+                        className="mx-auto h-6 w-fit"
                         src="/logo/lovelace-lines.svg"
                         alt="Column Logo"
                         height="2000"
