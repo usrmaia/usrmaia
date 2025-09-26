@@ -7,4 +7,5 @@ export * from "./hero-section";
 export * from "./logo";
 export * from "./portfolio/portfolio-section";
 export * from "./specialty";
+export * from "./analytics/structured-data";
 export * from "./technologies-section";
